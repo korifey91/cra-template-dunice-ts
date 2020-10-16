@@ -16,5 +16,9 @@
     "typescript",
     "stylelint"
   ],
-  "private": true
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/korifey91/cra-template-dunice-ts.git"
+  },
+  "homepage": "https://github.com/korifey91/cra-template-dunice-ts#readme"
 }
