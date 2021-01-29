@@ -31,7 +31,7 @@ module.exports = {
           '/^react/',
           'module',
           ['parent', 'sibling', 'index'],
-          '/.*(css|scss)$/',
+          '/.*.module.scss$/',
         ],
         newlinesBetween: 'always',
       },

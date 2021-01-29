@@ -15,7 +15,7 @@ npx create-react-app app-name --template dunice-ts
 The CRA Custom Template does not yet have support for `devDependencies`, so I recommend edit your `package.json` to like this:  
 ```
 {
-  "name": "rough-estimates-builder",
+  "name": "your-project-name",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -26,34 +26,34 @@ The CRA Custom Template does not yet have support for `devDependencies`, so I re
     "lint": "eslint --ext .js,.jsx,.ts,.tsx ./src"
   },
   "dependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
-    "react-scripts": "3.4.3",
-    "typescript": "~3.7.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.1",
+    "typescript": "<=4.1.0"
     "node-sass": "^4.14.1",
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
-    "@types/jest": "^24.0.0",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.0",
-    "@types/react-dom": "^16.9.0",
-    "@typescript-eslint/eslint-plugin": "^4.4.1",
-    "eslint-config-airbnb-typescript": "^11.0.0",
-    "eslint-config-prettier": "^6.12.0",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.3",
+    "@testing-library/user-event": "^12.6.2",
+    "@types/jest": "^26.0.0",
+    "@types/node": "^14.14.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "@typescript-eslint/eslint-plugin": "^4.14.1",
+    "eslint-config-airbnb-typescript": "^12.0.0",
+    "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-import-helpers": "^1.1.0",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.21.4",
     "eslint-plugin-react-hooks": "^4.1.2",
     "husky": ">=4",
     "lint-staged": ">=10",
     "prettier": "^2.1.2",
     "stylelint": "^13.7.2",
-    "stylelint-config-standard": "^20.0.0"
+    "stylelint-config-standard": "^20.0.0",
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -78,7 +78,7 @@ The CRA Custom Template does not yet have support for `devDependencies`, so I re
   "lint-staged": {
     "**/*.{js,jsx,ts,tsx}": [
       "prettier --write",
-      "eslint --cache --ext '.js,.jsx,.ts,.tsx' --fix"
+      "eslint --ext '.js,.jsx,.ts,.tsx' --fix"
     ],
     "*.scss": "stylelint --syntax=scss"
   }
